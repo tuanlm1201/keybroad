@@ -1,0 +1,14 @@
+.social {
+  &-container {
+    grid-template-columns: repeat(4, 1fr);
+    @include flexBox(
+      $align: center,
+      $justify: space-around,
+      $justifyItem: center,
+      $colGap: 8rem
+    );
+    .social__img {
+      width: 100px;
+    }
+  }
+}

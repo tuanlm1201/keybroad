@@ -1,0 +1,23 @@
+//Button
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: $black-color;
+  color: $white-color;
+  padding: 1.6rem 2rem;
+  border-radius: 0.8rem;
+  transition: 0.3s;
+
+  &:hover{
+    background-color: $bgHover;
+  }
+
+  &--flex {
+    @include flexBox($align: center, $colGap: 1.2rem);
+    display: inline-flex;
+  }
+}
+
+.grid{
+  display: grid;
+}

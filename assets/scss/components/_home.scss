@@ -1,0 +1,38 @@
+.home {
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .home-content {
+      &__title {
+        @include font($fontWeight: 600, $fontSize: 10rem, $lineHeight: 9.6rem);
+        background: $text-gradient;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      &__subtitle {
+        @include font($fontWeight: 600, $fontSize: 6rem, $color: $white-color);
+        margin-bottom: $mb-40;
+      }
+
+      &__title-desc {
+        @include font($fontWeight: 500, $fontSize: 2rem, $color: $white-color);
+        margin-bottom: $mb-16;
+      }
+
+      &__desc{
+          @include font( $fontSize: 1.6rem);
+          margin-bottom: $mb-40;
+          padding-right: 8rem;
+      }
+
+      &__price{
+        @include font($fontSize: 2rem, $fontWeight: 600);
+        margin-left: $mb-12;
+      }
+      
+    }
+  }
+}

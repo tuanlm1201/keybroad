@@ -1,0 +1,56 @@
+//============================= GOOGLE FONT ====================================
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+// ===============Variables====================
+//color
+$bgColor: hsl(206, 4%, 6%);
+$bgHover: #141515;
+$text-color: #bdc0c2;
+$black-color: #000;
+$white-color: #fff;
+$text-gradient: linear-gradient(hsl(206, 4%, 24%), hsl(206, 4%, 8%));
+
+//height
+$header-height: 72px;
+
+//margin
+$mb-8: 8px;
+$mb-12: 12px;
+$mb-16: 16px;
+$mb-24: 24px;
+$mb-32: 32px;
+$mb-40: 40px;
+$mb-48: 48px;
+
+// ===============Mixin====================
+@mixin flexBox(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $wrap: nowrap,
+  $justifyItem: flex-start,
+  $colGap: 0px,
+  $rowGap: 0px
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  column-gap: $colGap;
+  row-gap: $rowGap;
+}
+
+@mixin font(
+  $fontFamily: "Poppins",
+  $fontSize: 1.6rem,
+  $fontWeight: normal,
+  $lineHeight: normal,
+  $color: $text-color
+) {
+  font-family: $fontFamily, sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
