@@ -2,8 +2,11 @@
   &-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 
     .home-content {
+      margin-top: 80px;
+       
       &__title {
         @include font($fontWeight: 600, $fontSize: 10rem, $lineHeight: 9.6rem);
         background: $text-gradient;

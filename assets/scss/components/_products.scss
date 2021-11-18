@@ -1,0 +1,27 @@
+.products {
+  &__line {
+    line-height: 10rem;
+  }
+
+  .products-container {
+    // grid-template-columns: repeat(3, 162px);
+    height: 135px;
+    gap: 92px 4.8rem;
+    border-radius: 5px;
+    padding-top: 8rem;
+    margin: 0px auto;
+  }
+  
+  .products__card {
+    position: relative;
+    background-color: $containerColor;
+    padding: 1.5rem;
+
+    .products__btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0.8rem;
+    }
+  }
+}

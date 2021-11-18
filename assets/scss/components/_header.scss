@@ -1,4 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: $bgColor;
+
   .nav {
     height: $header-height;
     @include flexBox($justify: space-between, $align: center);

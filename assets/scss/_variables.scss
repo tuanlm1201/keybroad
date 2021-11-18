@@ -4,6 +4,7 @@
 // ===============Variables====================
 //color
 $bgColor: hsl(206, 4%, 6%);
+$containerColor: hsl(206, 4%, 10%);
 $bgHover: #141515;
 $text-color: #bdc0c2;
 $black-color: #000;
@@ -22,35 +23,4 @@ $mb-32: 32px;
 $mb-40: 40px;
 $mb-48: 48px;
 
-// ===============Mixin====================
-@mixin flexBox(
-  $direction: row,
-  $justify: flex-start,
-  $align: stretch,
-  $wrap: nowrap,
-  $justifyItem: flex-start,
-  $colGap: 0px,
-  $rowGap: 0px
-) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
-  column-gap: $colGap;
-  row-gap: $rowGap;
-}
 
-@mixin font(
-  $fontFamily: "Poppins",
-  $fontSize: 1.6rem,
-  $fontWeight: normal,
-  $lineHeight: normal,
-  $color: $text-color
-) {
-  font-family: $fontFamily, sans-serif;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
-  color: $color;
-}
