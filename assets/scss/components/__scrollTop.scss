@@ -1,0 +1,30 @@
+.btn__scrollTop {
+    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  
+  i {
+      &::before {
+          font-size: 2.5rem;
+        }
+    }
+}
+
+.show-scroll{
+    display: block;
+    transition: all .7s linear;
+    animation: show-scroll-animation 1s linear;
+}
+
+@keyframes show-scroll-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

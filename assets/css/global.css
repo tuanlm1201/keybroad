@@ -271,6 +271,11 @@ body {
   text-transform: none;
   text-decoration: none;
   height: 100%;
+  transition: 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -292,6 +297,17 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+.section.active-link {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -639,6 +655,34 @@ body {
   color: #a2a6a9;
   text-transform: none;
   text-decoration: none;
+}
+
+.btn__scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+.btn__scrollTop i::before {
+  font-size: 2.5rem;
+}
+
+.show-scroll {
+  display: block;
+  transition: all 0.7s linear;
+  animation: show-scroll-animation 1s linear;
+}
+
+@keyframes show-scroll-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
