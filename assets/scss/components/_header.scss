@@ -44,6 +44,78 @@
           color: white;
         }
       }
+
+      .nav__close {
+        display: none;
+        @include font($fontSize: 3rem, $fontWeight: 600);
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .nav__toggle {
+      display: none;
+      @include font($fontSize: 3rem, $fontWeight: 600);
+      color: white;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+  }
+
+  @media all and (max-width: 1023px) {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  @media all and (max-width: 767px) {
+    .nav .nav__toggle {
+      display: block;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background-color: $bgColor;
+      padding-top: 6rem;
+      @include flexBox($direction: column, $align: center, $rowGap: 5rem);
+      display: none;
+      animation: showMenu 0.4s linear;
+
+      &__link {
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+
+      &.show-menu {
+        display: flex;
+      }
+
+      .nav__close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+      }
+    }
+
+    @keyframes showMenu {
+      0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 }

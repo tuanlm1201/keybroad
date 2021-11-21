@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <title>Keychron K2 V2</title>
     <!--=============== REMIX ICON ===============-->
     <link
@@ -16,14 +20,21 @@
     <link rel="stylesheet" href="./assets/css/global.css" />
   </head>
   <body>
-      <!--=============== Header ===============-->
+    <!--=============== Header ===============-->
     <header class="header" id="header">
       <nav class="nav container header-container">
         <a href="!#" class="nav__icon"
           ><img src="./assets/img/logo.png" alt="" srcset=""
         /></a>
+
+        <div class="nav__toggle">
+          <span><i class="ri-menu-line toggle__icon"></i></span>
+        </div>
+
         <div class="nav-menu">
-          <a href="#home" class="nav-menu__link nav-menu__link--active">Home</a>
+          <span class="nav__close"><i class="ri-close-line"></i></span>
+
+          <a href="#home" class="nav-menu__link">Home</a>
           <a href="#specs" class="nav-menu__link">Specs</a>
           <a href="#case" class="nav-menu__link">Case</a>
           <a href="#sound" class="nav-menu__link">Sound</a>
@@ -128,7 +139,7 @@
       <!--=============== Case ===============-->
       <section class="case section grid" id="case">
         <h2 class="section__title section__title-gradient">Case</h2>
-          <img src="./assets/img/case3.png" alt="" class="case__img-title" />
+        <img src="./assets/img/case3.png" alt="" class="case__img-title" />
         <div class="case-container container grid">
           <div class="case__content">
             <h3 class="case__title">SUITABLE FOR ALL DEVICES</h3>
@@ -326,7 +337,12 @@
         </div>
         <div class="footer__content">
           <form class="footer__form">
-            <input type="email" class="footer__input" placeholder="Email" required />
+            <input
+              type="email"
+              class="footer__input"
+              placeholder="Email"
+              required
+            />
             <button class="btn btn--flex">
               <i class="ri-send-plane-line button__icon"></i> Subscribe
             </button>
@@ -360,8 +376,10 @@
         <p class="footer__copy-link">© Tuanlm1201 . All right reserved</p>
       </div>
     </footer>
-    
-    <button class="btn btn--flex btn__scrollTop"><i class="ri-arrow-up-s-fill"></i></button>
+
+    <button class="btn btn--flex btn__scrollTop">
+      <i class="ri-arrow-up-s-fill"></i>
+    </button>
 
     <script src="./assets/js/app.js"></script>
   </body>

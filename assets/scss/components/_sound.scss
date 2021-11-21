@@ -1,11 +1,17 @@
-.sound{
-    &-container{
-        background-color: $containerColor;
-        padding: 20px;
-        border-radius: 5px;
-    }
+.sound {
+  &-container {
+    background-color: $containerColor;
+    padding: 20px;
+    border-radius: 5px;
+  }
 
-    .sound-video{
+  .sound-video {
+  }
+}
 
-    }
+@media screen and (max-width: 767px) {
+  .sound-video {
+    width: 100%;
+    height: auto;
+  }
 }

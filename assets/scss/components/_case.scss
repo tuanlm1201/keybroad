@@ -16,6 +16,8 @@
 
   &__content {
     width: 250px;
+    position: relative;
+    top: 0;
 
     .case__title {
       @include font(
@@ -35,5 +37,36 @@
 
   &__img {
     border-radius: 4px;
+  }
+
+  @media screen and (max-width: 968px) {
+    &-container {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__img-title {
+      justify-self: center;
+    }  
+
+    &__content {
+      .case__title {
+        @include font(
+          $fontSize: 1.6rem,
+          $fontWeight: 600,
+          $color: $white-color,
+          $textTransform: uppercase
+        );
+        margin-bottom: $mb-12;
+      }
+
+      .case__desc {
+        font-size: 1.3rem;
+        margin-bottom: $mb-12;
+      }
+    }
   }
 }
