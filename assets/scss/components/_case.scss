@@ -1,5 +1,4 @@
 .case {
-
   &-container:last-child {
     margin-top: 100px;
   }
@@ -10,8 +9,9 @@
     justify-items: center;
   }
 
-  &__img-title{
+  &__img-title {
     justify-self: center;
+    margin-bottom: $mb-24;
   }
 
   &__content {
@@ -46,11 +46,15 @@
 
     &__content {
       width: 100%;
+
+      & > a {
+        margin-bottom: $mb-24;
+      }
     }
 
     &__img-title {
       justify-self: center;
-    }  
+    }
 
     &__content {
       .case__title {

@@ -623,7 +623,7 @@ html {
 }
 
 .specs-container {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
 }
@@ -696,6 +696,7 @@ html {
 }
 .case__img-title {
   justify-self: center;
+  margin-bottom: 24px;
 }
 .case__content {
   width: 250px;
@@ -725,6 +726,9 @@ html {
   }
   .case__content {
     width: 100%;
+  }
+  .case__content > a {
+    margin-bottom: 24px;
   }
   .case__img-title {
     justify-self: center;
